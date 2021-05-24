@@ -3,7 +3,7 @@ local markerOn,first,markerTimer,markerWhile = false,false,0,0
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(5)
+        Citizen.Wait(0)
         
         if IsControlJustPressed(0, Config.FirstButton) and IsControlPressed(0, Config.SecondButton) then
             first = false
